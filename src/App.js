@@ -55,8 +55,8 @@ class App extends Component {
 					<h1 className="display-2">Caption image<span className="vim-caret">s</span></h1>
 
 					<img alt="GitHub" src="https://img.shields.io/github/license/nikstoyanov/CaptionThis.svg"></img> &nbsp;
-					<img alt="Travis CI API" src="https://img.shields.io/travis/NikStoyanov/image-recognition?label=API%20Build" /> &nbsp;
-					<img alt="Travis CI Front-end" src="https://img.shields.io/travis/NikStoyanov/CaptionThis?label=Front-end%20Build" />
+					<img alt="Travis CI API" src="https://img.shields.io/travis/com/NikStoyanov/image-recognition?label=API%20build" /> &nbsp;
+					<img alt="Travis CI Front-end" src="https://img.shields.io/travis/com/NikStoyanov/CaptionThis?label=Front-end%20build" />
 
 					<div className="lead mb-3 text-mono text-success">Use the API or front end interface (below) to inscribe images by generating a caption.</div>
 
