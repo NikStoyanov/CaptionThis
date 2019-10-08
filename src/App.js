@@ -34,13 +34,13 @@ class App extends Component {
 										<a href="app.html" className="p-3 text-decoration-none text-light"><span className="ht-tm-element btn btn-primary">How does it work?</span></a>
 				            <a href="https://nikstoyanov.me" className="pl-md-0 p-3 text-light"><span className="ht-tm-element btn btn-primary">About</span></a>
 				          </div>
-									<a href="https://beerpay.io/NikStoyanov/Inscribe" target="_blank" rel="noopener noreferrer"><img src="https://beerpay.io/NikStoyanov/Inscribe/badge.svg?style=beer-square" alt="beer pay" /></a>
+									<a href="https://beerpay.io/NikStoyanov/CaptionThis" target="_blank" rel="noopener noreferrer"><img src="https://beerpay.io/NikStoyanov/CaptionThis/badge.svg?style=beer-square" alt="beer pay" /></a>
 				        </div>
-								<a href="https://github.com/nikstoyanov/inscription-ing" className="ht-tm-element btn btn-primary">
+								<a href="https://github.com/nikstoyanov/image-recognition" className="ht-tm-element btn btn-primary">
             			<span className="fab fa-github mr-2"></span>
 									Fork API
 								</a> &nbsp;
-								<a href="https://github.com/nikstoyanov/inscription-ing" className="ht-tm-element btn btn-primary">
+								<a href="https://github.com/nikstoyanov/CaptionThis" className="ht-tm-element btn btn-primary">
             			<span className="fab fa-github mr-2"></span>
 									Fork Frontend
 								</a>
@@ -54,8 +54,9 @@ class App extends Component {
 					<div className="col-xl-6">
 					<h1 className="display-2">Caption image<span className="vim-caret">s</span></h1>
 
-					<img alt="GitHub" src="https://img.shields.io/github/license/nikstoyanov/Inscribe.svg"></img> &nbsp;
-					<img alt="Travis CI" src="https://img.shields.io/travis/com/nikstoyanov/Inscribe.svg"></img> &nbsp;
+					<img alt="GitHub" src="https://img.shields.io/github/license/nikstoyanov/CaptionThis.svg"></img> &nbsp;
+					<img alt="Travis CI API" src="https://img.shields.io/travis/NikStoyanov/image-recognition?label=API%20Build" /> &nbsp;
+					<img alt="Travis CI Front-end" src="https://img.shields.io/travis/NikStoyanov/CaptionThis?label=Front-end%20Build" />
 
 					<div className="lead mb-3 text-mono text-success">Use the API or front end interface (below) to inscribe images by generating a caption.</div>
 
@@ -64,13 +65,13 @@ class App extends Component {
           <div className="card-body">
             <blockquote className="card-blockquote">
 							<p>Run the API with:</p>
-              <p>curl https://caption.ninja:8090/recognize -F 'file=@./cute-dog.jpg'</p>
+              <p>curl http://captionthis.com:8090/recognize -F 'file=@./cute-dog.jpg'</p>
             </blockquote>
           </div>
         </div>
 
+					<div className="lead mb-3 text-mono text-success">Click the circle, select an image and click Upload.</div>
 					</div></div></div>
-
 					<div className="jumbotron bg-transparent mb-0 radius-0" >
 				  <div className="container ht-tm-container">
 				  <div className="row">
@@ -87,11 +88,11 @@ class App extends Component {
 
 							<div className="ht-tm-codeblock ht-tm-btn-replaceable ht-tm-needs-darkness">
 							The backend is written in Go and the frontend in JS using React. The image recognition is done using Tersorflow and Incepion v5.
-							The project is run in Docker on AWS. For full explanation see <a href="./howto.html">how it all works</a>.
+							The API is run in Docker and deployed on AWS ECS. The front-end is stored in S3. All deployment is through Travis CI. For full explanation see <a href="./howto.html">how it all works</a>.
 							</div>
 
 							<div className="text-darkgrey text-mono my-2">
-							The project is done for fun and as a learning exercise.
+							The project is done for fun and as a learning exercise meaning that it is ran on a small cluster and throttled.
 							</div>
 
 					</div>
