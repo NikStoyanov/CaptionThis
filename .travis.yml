@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - "stable"
+script:
+  - npm test
+  - npm run build
+deploy:
+  provider: s3
+  bucket: "captionthis"
+  skip_cleanup: true
+  local_dir: build
+  on:
+    branch: master
